@@ -1,0 +1,260 @@
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #4A5B9A;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-left: -1050px;
+}
+
+/* Estilo de la barra de navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #000;
+}
+
+#enviarMail{
+  opacity: 0;
+}
+
+/*Estilo del logo*/
+.logo {
+  width: 80px;
+  height: 80px;
+
+}
+
+/*Estilo del carrusel*/
+.carousel-inner img{
+  position: relative;
+  margin-bottom: 50px;
+  width: 650px;
+  height: 700px;
+
+}
+
+
+/* Estilo del cuerpo */
+main {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20
+}
+
+article h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+article p, article ul {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+article ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+article li {
+  margin-bottom: 10px;
+}
+
+article a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.contenido {
+  display: none;
+}
+
+
+#actividades {
+  text-align: center;
+}
+
+/*Imagenes del calendario*/
+.calendario {
+  width: 800px;
+  height: 2000px;
+}
+
+#calendario1 {
+  margin-left: 100px;
+}
+
+#calendario2 {
+  margin-right: 200px;
+}
+
+
+/* Estilos del footer */
+
+footer {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+nav li {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+article h2 {
+  font-size: 24px;
+}
+
+article p, article ul {
+  font-size: 16px;
+}
+
+footer {
+  font-size: 12px;
+}
+
+
+/* Estilos globales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+
+
+
+/* Estilo del formulario */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  background-color: #008CBA;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0077B3;
+}
+
+/* Estilos específicos para la página de contacto */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+form {
+  margin-top: 20px;
+}
+
+
+/* Estilos globales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Estilos específicos para la página "Sobre nosotros" */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+

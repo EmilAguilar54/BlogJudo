@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="icon" type="image/png" href="images/judo-icon.png">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <a title="Inicio" href="index.html"><img class="logo" src="images/judo-icon.png" alt="Escuel Tecnica Marcial de Judo Xalapa"></a>
+    <h1>Blog de Judo</h1> 
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="evento.html">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Contacto</h2>
+    <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros:</p>
+    
+    <form id="form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      
+      <input type="submit" value="Enviar">
+      <input type="Reset" value="Borrar todo">
+    </form>
+  </main>
+   <a id="enviarMail" href="mailto:me@leonidasesteban.com"></a>
+  
+  <footer>
+    <p>Derechos de autor © 2023 Blog de Judo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#enviarMail')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:comentariosblog33@gmail.com?subject=nombre ${form.get('nombre')}  correo ${form.get('email')}&body=${form.get('mensaje')}`)
+      $buttonMailto.click()
+    }
+  </script>
+</body>
+</html>
